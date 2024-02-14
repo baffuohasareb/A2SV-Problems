@@ -1,0 +1,16 @@
+def longestCommonPrefix(self, strs: List[str]) -> str:
+        common_prefix = ""
+
+        # iterate over the first word
+        for i in range(len(strs[0])):
+            # iterate over the array of strings
+            for word in strs:
+                # if the current index of the first word is out of bounds
+                # or if the letter at the current index in the first word is different 
+                # from the letter at the corresponding index in the current word
+                if i == len(word) or strs[0][i] != word[i]:
+                    return common_prefix
+            
+            # if none of the conditions are met, add the letter at the current index to the prefix
+            common_prefix += word[i]
+        return common_prefix
