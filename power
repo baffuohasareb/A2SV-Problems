@@ -1,0 +1,6 @@
+num = int(input())
+exponent = int(input())
+modulo = int(input())
+
+print(num ** exponent)
+print((num ** exponent) % modulo)
