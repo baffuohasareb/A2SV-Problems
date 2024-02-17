@@ -1,0 +1,9 @@
+arr = list(map(int, input().split()))
+    
+    largest = max(arr)
+    
+    new_arr = [element for element in arr if element != largest]
+    
+    runner_up = max(new_arr)
+    
+    print(runner_up)
