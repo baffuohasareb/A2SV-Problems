@@ -1,0 +1,11 @@
+class Solution:
+    def sumOfThree(self, num: int) -> List[int]:
+        start = (num - 3) // 3
+
+        if num == 0:
+            return[-1, 0, 1]
+
+        if start >= 0 and (3 * start + 3) == num:
+            return [start, start + 1, start + 2]
+        else:
+            return []
